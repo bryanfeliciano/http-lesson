@@ -37,6 +37,8 @@ executables:
     - http-lesson
     - bytestring
     - http-conduit
+    default-extensions:
+    - OverloadedStrings
 
 tests:
   http-lesson-test:

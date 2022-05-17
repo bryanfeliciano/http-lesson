@@ -28,6 +28,9 @@ apiPath = "/cdo-web/api/v2/datasets"
 --                                     $ setRequestPort 443
 --                                     $ defaultRequest 
 
+-- Error with "token" --
+
+buildRequest :: BC.ByteString -> BC.ByteString -> p -> BC.ByteString -> Request
 buildRequest token host method path =
     let state1 = setRequestPort 443 defaultRequest
     in let state2 = setRequestSecure True state1
